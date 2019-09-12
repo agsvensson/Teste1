@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Chilanka', cursive;
+    
+}
+/*configurações do logotipo*/
+.logo {
+    position: absolute;
+    z-index: 1; /* define a imagem para ficar por cima do laranja*/
+}
+
+/*configurações menu superior*/
+.menu-sup { 
+    background-color: #ff7900;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu-sup li {   
+    display: inline-block;
+    padding: 35px;
+}
+
+/*configurações social media superior*/
+.social-sup {
+    text-decoration: none;
+    z-index: 2;
+    position: absolute;
+    text-align: right;
+    margin-right: 150px;
+}  
+.social-sup li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.social-sup li a {
+    border-bottom: none;
+}
+.social-sup li img {
+    width:auto;
+    height:auto;
+    margin-right: 15px;
+}
+
+/*configurações social media inferior*/
+.social-inf {
+    text-decoration: none;
+    z-index: 3;
+    position: absolute;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 40px;
+}  
+.social-inf li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.social-inf li a {
+    border-bottom: none;
+}
+.social-inf li img {
+    width:auto;
+    height:auto;
+    margin-left: 15px;
+}
+
+/*configurações menu inferior*/
+.menu-inf { 
+    background-color: #ff7900;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    text-decoration: none;
+}
+.menu-inf li {   
+    display: inline-block;
+    padding: 35px;
+}
+.contato {
+    text-decoration: none;
+    z-index: 4;
+    position: relative;
+    text-align: left;
+    margin-right: auto;
+    display: inline-block;
+}
+
+
+.responsive {
+    width: 100%;
+    height: 100%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+  /* carousel*/
+  #carouseria{
+    padding:0;
+    width:50%;
+    overflow:hidden;
+    object-position: center;
+}
+#carouseria .carouseria-item{
+    display:none;
+    height:100%;
+    transition:opacity .3s
+}
+
+/* botões de navegação carousel*/
+.carouseria-nav {
+    display: block;
+    position: relative;
+    padding: auto;
+    margin: auto;
+    pointer-events:none
+}
+
+.carouseria-nav .horizontal .nav-left {
+    pointer-events:all;
+    font-size:40px;
+    padding-bottom:5px;
+    transition:.3s;
+    cursor:pointer;
+    top: -50%;
+    right: -50%;
+    margin-right: 55%;
+    transform: translate(-50%, -50%);
+}
+.carouseria-nav .horizontal .nav-right {
+    pointer-events:all;
+    font-size:40px;
+    padding-bottom:5px;
+    transition:.3s;
+    cursor:pointer;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.carouseria-nav .horizontal {
+    display: inline-flexbox; 
+    width:50%;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.carouseria-nav .horizontal .nav-left {
+    float:left;
+    opacity:.7;
+    padding-left:100%;
+    padding-right:-20px;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+    background:linear-gradient(to left,rgba(255,255,255,.8),rgba(255,255,255,0))
+}
+
+.carouseria-nav .horizontal .nav-left:hover {
+    opacity:1
+}
+
+.carouseria-nav .horizontal .nav-right {
+    float:right;
+    opacity:.7;
+    padding-left:15px;
+    padding-right:10px;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    background:linear-gradient(to right,rgba(255,255,255,.8),rgba(255,255,255,0))
+}
+
+.carouseria-nav .horizontal .nav-right:hover {
+    opacity:1
+}
+
+/* bolinhas de transição das fotos */
+.carouseria-index { 
+    display:flex;
+    position:relative;
+    justify-content:center;
+    pointer-events:none
+}
+
+.carouseria-index .index-item { 
+    display:block;
+    margin:3px;
+    width:9px;
+    height:9px;
+    background-color:#fff;
+    border-radius:50%;
+    transition:.2s;
+    cursor:pointer;
+    pointer-events:all
+}
+
+.hori {   
+    flex-direction:row;
+    align-items:flex-end;
+    top:-20px
+}
+
+/* CONTAINER TEXTO/IMG */
+* {	
+    box-sizing: border-box;
+}		
+
+.container {
+	display: inline-flex;
+	flex-wrap: wrap;
+    width: 30%;
+    margin: 0 auto;
+    border: 5px solid #ff7900;
+    margin-left: 2%;
+}
+.box {
+	padding: 2% 5%;
+	border: 5px solid #267fed
+}
+.bordinha {
+	flex: 1 0 70%;
+	display: flex;
+	flex-wrap: wrap;			
+}
+.t1, .t2, .t3 {
+	flex: 1 0 100%;
+}
+.conteudo {
+    flex: 1 0 70%;
+    color: #ff7900
+}
+.t1, .t2, .t3 {
+	background-color:#267fed;
+}
+
+
+/* FORMULÁRIO SOBRE*/
+#sobre {
+    text-align: center;
+}
+#h5 {
+    text-align: center;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.logo2 {
+    position: relative;
+    object-position: center;
+    display: block;
+    margin-left: 40%;
+    margin-right: 50%;
+}
+
+
+/* FORMULÁRIO DE SERVIÇOS*/
+#servicos {
+    text-align: center;
+}
+#h3 {
+    text-align: left;
+}
+#h4 {
+    text-align: left;
+}
+
+
+/* FORMULÁRIO DE CONTATO*/
+form {
+    margin: auto;
+    width: 700px;
+    height: 325px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 2em;
+}
+label {
+    display: inline-block;
+    width: 85px;
+    text-align: right;
+}
+input, textarea {
+    font: 1em sans-serif;
+    width: 500px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 8em;
+    resize: vertical;
+}
+.button {
+    padding-left: 250px; 
+}
+button {
+    margin-left: .5em;
+}
+
+#envie-msg {
+    text-align: center;
+}
+
